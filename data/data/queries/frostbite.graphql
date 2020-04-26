@@ -1,0 +1,23 @@
+query EventSets{
+  event(id: 392038) {
+    sets(
+      page: 1
+      perPage: 124
+      sortType: STANDARD
+    ) {
+      pageInfo {
+        total
+      }
+      nodes {
+            slots {
+              entrant {
+            name
+          }
+              standing {
+                placement
+      }
+    }
+      }
+    }
+  }
+}
